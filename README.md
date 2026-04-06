@@ -149,7 +149,7 @@ This is a **functional prototype** demonstrating:
 
 ## 👨‍💻 Author
 
-**Dinesh Chaudhary**  
+**Team AppArmour**  
 Hackathon Project – AppArmour  
 
 ---
