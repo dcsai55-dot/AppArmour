@@ -1,56 +1,146 @@
 # 🛡️ AppArmour – Real-Time Malware & Fake App Detection System
 
-AppArmour is a prototype Android security application designed to protect users from malicious and fake apps, especially those distributed via SMS, WhatsApp links, and third-party APK downloads.
-
-It works as a lightweight background security layer that analyzes installed applications based on permissions, behavior patterns, and risk factors, and alerts users in real time.
+AppArmour is a prototype Android security application designed to detect malicious and fake applications based on permissions and behavioral patterns. It focuses on preventing financial fraud caused by fake banking apps distributed via SMS, WhatsApp, and third-party APK downloads.
 
 ---
 
-## 🚀 Features
+## 🎯 Problem Statement
 
-- 🔍 APK & Installed App Scanning  
-- 🧠 Rule-Based Risk Detection Engine  
-- 🚨 Real-Time Risk Alerts (Safe / Suspicious / Dangerous)  
-- 🧹 One-Click Uninstall Option for Risky Apps  
-- 📩 SMS Alert System (Prototype Demo)  
-- ⚡ Lightweight & Fast Performance  
+Fake and malicious apps are widely circulated through messaging platforms like WhatsApp and SMS. These apps mimic trusted platforms (e.g., banking apps) and steal sensitive information such as OTPs, login credentials, and financial data.
+
+---
+
+## 💡 Proposed Solution
+
+AppArmour provides a lightweight background security mechanism that scans installed applications and evaluates their risk using a rule-based detection engine.
+
+It alerts users in real time and helps them take action before any damage occurs.
+
+---
+
+## 🚀 Key Features
+
+- 🔍 Scan installed applications  
+- 🧠 Permission-based risk analysis  
+- 🚨 Real-time risk classification:
+  - 🟢 Safe  
+  - 🟡 Suspicious  
+  - 🔴 Dangerous  
+- 🧹 One-click uninstall suggestion  
+- ⚡ Lightweight and fast  
 
 ---
 
 ## 🏗️ System Architecture
-
-User Action → Detection Layer → APK/Link Scanner → Risk Engine → Decision Module → Alert System → Reporting (Future Scope)
+User Action
+↓
+Detection Layer
+↓
+APK / App Scanner
+↓
+Risk Analysis Engine
+↓
+Decision Module
+↓
+Alert System
+↓
+User Action (Uninstall / Ignore)
 
 ---
 
 ## 🔄 Working Flow
 
-1. User installs or opens an APK/link  
-2. AppArmour detects the activity  
-3. Scanner analyzes permissions & app metadata  
-4. Risk Engine calculates risk score  
-5. User receives alert notification  
-6. Option to uninstall or ignore  
+1. User clicks **Scan Apps**  
+2. App retrieves installed applications  
+3. RiskAnalyzer evaluates permissions  
+4. Risk score is generated  
+5. App displays risk level  
+6. User can uninstall dangerous apps  
 
 ---
 
 ## ⚙️ Tech Stack
 
 - 📱 Android (Java)  
-- ⚙️ PackageManager API  
-- 🔐 Accessibility Service  
-- 📩 SMS Manager (Demo Purpose)  
-- ☁️ Firebase (Optional for future integration)  
+- 🔍 PackageManager API  
+- 🎨 XML Layouts  
+- ⚡ Rule-based Detection System  
 
 ---
 
 ## 🧠 Methodology
 
-- Permission-based risk analysis  
-- Pattern detection (e.g., fake banking app names)  
-- Rule-based scoring system  
+- Permission-based malware detection  
+- Pattern recognition (keywords like *bank*, *loan*)  
+- Risk scoring system  
 - Real-time alert mechanism  
 
 ---
 
 ## 📂 Project Structure
+app/
+└── src/
+└── main/
+├── java/com/apparmour/
+│ ├── MainActivity.java
+│ ├── ScannerActivity.java
+│ └── RiskAnalyzer.java
+│
+├── res/layout/
+│ ├── activity_main.xml
+│ └── activity_scanner.xml
+│
+└── AndroidManifest.xml
+
+---
+
+## 📸 Screenshots
+
+> Add your app UI screenshots here (from Lovable)
+
+---
+
+## ⚠️ Limitations
+
+- Cannot automatically delete apps due to Android security restrictions  
+- Cannot monitor encrypted messaging apps (privacy limitations)  
+- Uses rule-based detection (AI integration planned)  
+
+---
+
+## 🌍 Impact
+
+- Helps prevent digital fraud  
+- Protects non-technical users  
+- Increases awareness about fake apps  
+
+---
+
+## 🚀 Future Scope
+
+- 🤖 AI/ML-based malware detection  
+- 🏦 Integration with banking systems (e.g., SBI)  
+- 🌐 Real-time threat intelligence system  
+- 🔊 Voice alerts for accessibility  
+
+---
+
+## 🧪 Prototype Status
+
+This is a **functional prototype** demonstrating:
+- App scanning  
+- Risk detection logic  
+- User alert system  
+
+---
+
+## 👨‍💻 Author
+
+**Dinesh Chaudhary**  
+Hackathon Project – AppArmour  
+
+---
+
+## 📜 License
+
+This project is for educational and hackathon purposes only.
