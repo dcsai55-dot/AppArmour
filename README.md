@@ -67,6 +67,25 @@ User Action (Uninstall / Ignore)
 - ⚡ Rule-based Detection System  
 
 ---
+## 📸 Screenshots
+
+### 🏠 Home Screen
+<img src="screenshots/home.png" width="250"/>
+
+### 🔍 Scan Screen
+<img src="screenshots/scan.png" width="250"/>
+
+### ⚠️ Permission Alert
+<img src="screenshots/permission.png" width="250"/>
+
+### 🔐 Access Screen
+<img src="screenshots/access.png" width="250"/>
+
+### 🧠 Detection Screen
+<img src="screenshots/detect.png" width="250"/>
+
+### ⚙️ Settings Screen
+<img src="screenshots/settings.png" width="250"/>
 
 ## 🧠 Methodology
 
