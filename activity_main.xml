@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#0A0F1C"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="AppArmour"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#00FF9F"/>
+
+    <Button
+        android:id="@+id/scanBtn"
+        android:text="Scan Apps"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"/>
+</LinearLayout>
