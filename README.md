@@ -94,12 +94,6 @@ app/
 
 ---
 
-## 📸 Screenshots
-
-> Add your app UI screenshots here (from Lovable)
-
----
-
 ## ⚠️ Limitations
 
 - Cannot automatically delete apps due to Android security restrictions  
